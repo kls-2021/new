@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Class Selector In Paragraph</title>
+    <style>
+        .ad
+        {  
+            color:blue;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style:italic;
+            font-weight:bold;
+            font-size:40px;
+            text-align:center;
+            border-style:dotted;
+            border-radius:50px;
+            border-color:black;
+        }
+        .sd
+        {
+            background-color:red;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style:normal;
+            font-weight:bold;
+            font-size:40px;
+            text-align:center;
+            border-style:dotted;
+            border-radius:50px;
+            border-color:black;
+        } 
+        .ad.sd
+        {
+            font-family:Arial, Helvetica, sans-serif;
+            font-style:italic;
+            font-weight:bold;
+            font-size:40px;
+            text-align:center;
+            border-style:dotted;
+            border-radius:50px;
+            border-color:black;
+        }
+        </style>
+</head>
+<body>
+    <center><span style="background-color:lime;color:yellow;font-style:italic;font-weight:bold;font-size:40px">CLASS SELECTOR IS A WAY TO SELECT ALL OF THE ELEMENTS WITH THE SPECIFIED CLASS NAME AND APPLY STYLES TO EACH OF THE MATCHING ELEMENTS</span></center>
+    <br><center><span style="background-color:black;color:white;font-style:italic;font-weight:bold;font-size:40px;border-style:dotted;border-radius:50px;border-color:black">USING CLASS SELECTOR IN PARAGRAPH</span></center>
+    <p class="ad">THIS IS SOME TEXT IN PARAGRAPH WITH CLASS "ad"(Color:Blue)</p>
+    <p class="sd">THIS IS SOME TEXT IN PARAGRAPH WITH CLASS "sd"(Background-color:Red)</p>
+    <p class="ad sd">THIS IS SOME TEXT IN PARAGRAPH WITH CLASS "ad sd"(Font-Style:Italic)</p>  
+    <p class="ad" class="sd">THIS IS SOME TEXT IN PARAGRAPH WITH CLASS "ad" FIRST AND CLASS "sd" SECOND,SO WHEN TWO CLASSES ARE THERE,THE FIRST MENTIONED CLASS STYLE IS APPLICABLE TO THE TEXT(Color:Blue,Background-color:Red)</p>
+    <p class="sd" class="sd">THIS IS SOME TEXT IN PARAGRAPH WITH CLASS "sd" FIRST AND CLASS "ad" SECOND,SO WHEN TWO CLASSES ARE THERE,THE FIRST MENTIONED CLASS STYLE IS APPLICABLE TO THE TEXT (Background-color:Red,Color:Blue)</p>
+</body>
+</html>
