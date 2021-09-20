@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector Case And Child Selector</title>
+    <style>
+        .ad
+        {  
+            background-color:black;
+            color:white;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style:italic;
+            font-weight:bold;
+            font-size:50px;
+            text-align:center;
+            border-style:dotted;
+            border-radius:50px;
+            border-color:black; 
+        }
+        .sd
+        {  
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style:italic;
+            font-weight:bold;
+            font-size:50px;
+            text-align:center;
+        }
+        div p
+        {
+            color: rgb(233, 14, 222);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style:italic;
+            font-weight:bold;
+            font-size:50px;
+            text-align:center;
+        }
+        article > ol
+        {
+            background-color:blue;
+            color:red;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style:italic;
+            font-weight:bold;
+            font-size:50px;
+        }
+        ol
+        {  
+            background-color:lime;
+            color:yellow;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style:italic;
+            font-weight:bold;
+            font-size:50px;
+        }
+    </style> 
+</head>
+<body style="font-size:60px;font-weight:bold">
+ <h1 class="ad">DESCENDANT SELECTOR CASE</h1>  
+ <div>
+    <p>This is a paragraph inside a div element.</p>
+    <p>This is another paragraph inside a div element.</p>
+    <span><p>This a paragraph inside a span element, inside a div element.</p></span>
+  </div>
+  <p class="sd">This is a paragraph, not inside a div element.</p>
+  <p class="sd">This is another paragraph, not inside a div element.</p>
+  <h1 class="ad">CHILD SELECTOR</h1> 
+    <article>
+        Chocolate Names Inside Article:
+             <ol><li>DAIRY MILK</li>
+             <li>5STAR</li>
+             <li>PERK</li></ol>
+    </article>
+        Chocolate Names Not Inside Article:
+            <ol><li>MUNCH</li>
+            <li>MILKY BAR</li>
+            <li>SNEAKERS</li></ol>
+</body>
+</html>
