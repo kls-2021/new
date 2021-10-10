@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE BOX MODEL</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+        }
+        body 
+        {
+            margin: 30px;
+            padding: 0;
+            width:100%;
+            background-image: linear-gradient(to right, #d74177 , #ffe98a);
+        }
+        #box 
+        {
+            background-color: pink;
+            border: 5px solid green;
+            font-size: 20px;
+            font-family: cursive;
+            font-weight: bold;
+            padding: 50px;
+            margin: 10px;
+            width: 400px;
+            height: 300px;
+        }
+        #content
+        {
+            background-color: antiquewhite; 
+        }
+        h1
+        {
+            margin-bottom: 30px;
+            font-size: 50px;
+            font-family: cursive;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Box Model around a Text</h1></center>
+    <center><div id="box">
+        The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.
+    <br><br><br><br><div id="content">This statement is in div with id "content" which is under id "box".</div></div></center><br><br><br><br><br>
+<center><div style="background-color: rgb(192, 253, 255);border: 5px solid black; width: 700px; font-size: 23px;font-weight: bold; font-family: cursive;">This is another statement in div with inline properties under id "box".</div></center>
+<center><h1>Box Model around a Image</h1></center>
+<center><img src="" padding="50px" border="5px solid green" margin="10px" width="300px" height="300px"></div>
+</body>
+</html>
