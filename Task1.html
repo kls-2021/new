@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flipping Image on Mouseover</title>
+    <style>
+        body 
+        {
+            background-image: linear-gradient(to right,yellow,lime);
+            text-align: center;
+            font-family: cursive;
+            font-weight: bold;
+
+        }
+        h1,h2
+        {
+            background-image: linear-gradient(to left,yellow,lime);
+            margin-left: 250px;
+            margin-right: 250px;
+        }
+        .img1 {
+            width: 400px;
+            height: 300px;
+            border: 3px solid black;
+        }
+        .img1:hover {
+            transform: scaleX(-1);
+        }
+        .box {
+            width: 400px;
+            height: 300px;
+            border: 3px solid black;
+            perspective: 1000px;
+        }
+        .img2 {
+            width: 400px;
+            height: 300px;
+        }
+        .inner-box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+        .box:hover .inner-box {
+            transform: rotateY(180deg);
+        }
+        .front-box, .back-box {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .back-box {
+            background-image: linear-gradient(to left,yellow,lime);
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <u><h1 style="font-size: 45px">Flipping Image On Mouseover</h1></u>
+        <h2 style="font-size: 35px">2D Image Flip on Mouseover</h2>
+        <img class="img1" src="img1part1.jpeg" alt="NatureImage1">
+        <br>
+        <h2 style="font-size: 35px">3D Image Flip on Mouseover</h2>
+        <div class="box">
+            <div class="inner-box">
+                <div class="front-box">
+                    <img class="img2" src="img1part2.jpeg" alt="Nature Image2">
+                </div>
+                <div class="back-box">
+                    <br><br><br>
+                    <h1>Nature Is Everywhere</h1>
+                    <h2>Everything that lives and grows is nature</h2>
+                </div>
+            </div>
+        </div>
+        <h2><a href="CS6.html">Click Here to Go To HOME Page..</a></h2>
+    </center>
+</body>
+</html>
